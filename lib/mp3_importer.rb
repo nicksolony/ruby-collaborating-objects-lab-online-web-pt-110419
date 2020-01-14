@@ -15,7 +15,11 @@ class MP3Importer
  
  
  def import
+<<<<<<< HEAD
    files.each {|file_name| Song.new_by_filename (file_name)}
+=======
+   
+>>>>>>> 4bf30980f30482608d8aa882764ff6d59e28a1ab
  end
  
  # def import(list_of_filenames)

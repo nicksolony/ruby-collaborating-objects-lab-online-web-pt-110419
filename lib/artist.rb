@@ -39,7 +39,11 @@ class Artist
   end
   
   def print_songs
+<<<<<<< HEAD
     songs.each {|song| puts song.name}
+=======
+    songs.each {|song| puts song.title}
+>>>>>>> 4bf30980f30482608d8aa882764ff6d59e28a1ab
   end
   
   

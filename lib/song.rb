@@ -1,10 +1,18 @@
 class Song
   
+<<<<<<< HEAD
   attr_accessor :name, :artist
   @@all = []
   
   def initialize (name)
     @name = name
+=======
+  attr_accessor :title, :artist
+  @@all = []
+  
+  def initialize (title)
+    @title = title
+>>>>>>> 4bf30980f30482608d8aa882764ff6d59e28a1ab
     @@all << self
   end
   
@@ -13,6 +21,7 @@ class Song
   end
   
   def artist_name=(name)
+<<<<<<< HEAD
     #if (self.artist.nil?)
       #self.artist = Artist.new(name)
        self.artist = Artist.find_or_create_by_name(name)
@@ -33,6 +42,17 @@ class Song
     song.name = filename.split(" - ")[1]
     song.artist_name = filename.split(" - ")[0]
     song
+=======
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
+  end
+  
+  def self.name
+    @title
+>>>>>>> 4bf30980f30482608d8aa882764ff6d59e28a1ab
   end
     
 
